@@ -34,6 +34,10 @@ public abstract class Material {
 
     public abstract void showDetail();
 
+    public String getName() {
+        return name;
+    }
+
     public int getId() {
         return id;
     }

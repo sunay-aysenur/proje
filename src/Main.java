@@ -5,10 +5,10 @@ public class Main {
         Person p1 = new Person(1, "Ayşe", "Yılmaz", 10);
         Person p2 = new Person(2, "Fatma", "Çelik", 20);
         Person p3 = new Person(3, "Zeynep", "Demir", 30);
-        Person d1 = new Person(4,"Mehmet", "Öztürk", 40);
-        Person d2 = new Person(5,"Ahmet", "Korkmaz", 50);
-        Person w1 = new Person(6,"Mustafa", "Yıldız", 60);
-        Person w2 = new Person(7,"Sude", "Sönmez", 45);
+        Director d1 = new Director(4,"Mehmet", "Öztürk", 40);
+        Director d2 = new Director(5,"Ahmet", "Korkmaz", 50);
+        Writer w1 = new Writer(6,"Mustafa", "Yıldız", 60);
+        Writer w2 = new Writer(7,"Sude", "Sönmez", 45);
 
         Category c1 = new Category(101, "Aksiyon", "Act");
         Category c2 = new Category(102, "Korku", "Hor");
@@ -67,6 +67,9 @@ public class Main {
         netflix.addMovie(m3);
         netflix.addBook(b1);
         netflix.addBook(b2);
+        netflix.addWriter(w1);
+        netflix.addWriter(w2);
+
 
         System.out.println("\n N1: En yüksek ortalama skorlu material: ");
         netflix.N1();
@@ -79,5 +82,8 @@ public class Main {
 
         System.out.println("\n N4: Belirli kişiye ait filmler (Kişi ID: 3)");
         netflix.N4(3);
+
+        System.out.println("\n N5: Ortalama skoru 85 ve üstü olan yazarlar: ");
+        netflix.N5();
     }
 }

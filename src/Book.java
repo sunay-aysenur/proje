@@ -14,6 +14,10 @@ public class Book extends Material{
         this.writer = newWriter;
     }
 
+    public Person getWriter(){
+        return writer;
+    }
+
     @Override
     public void showDetail() {
         System.out.println("Book:" + name +
